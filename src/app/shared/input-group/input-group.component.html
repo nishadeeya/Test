@@ -1,0 +1,46 @@
+<ng-container>
+    
+    <ng-container *ngIf="type === 'size'">
+        <div class="input-group {{class}}">
+            <span class="input-group-text" >{{prefixaddons}}</span>
+            <input type="text" class="form-control" >
+            
+          </div>
+    </ng-container>
+    <ng-container *ngIf="type === 'text'">
+        <div class="input-group ">
+            <span class="input-group-text">{{prefixaddons}}</span>
+            <input type="text" class="form-control" >
+            <span class="input-group-text">{{suffixaddons}}</span>
+          </div>
+    </ng-container>
+    <ng-container *ngIf="type === 'textarea'">
+        <div class="input-group ">
+            <span class="input-group-text">{{prefixaddons}}</span>
+            <textarea class="form-control" ></textarea>
+            <span class="input-group-text">{{suffixaddons}}</span>
+          </div>
+    </ng-container>
+ 
+    <ng-container *ngIf="type === 'multipleinputs'">
+        <div class="input-group ">
+            <input type="text" class="form-control" >
+            <span class="input-group-text">{{addons}}</span>
+            <input type="text" class="form-control" >
+          </div>
+    </ng-container>
+
+    <ng-container *ngIf="type === 'url'">
+        <div>
+            <label class="form-label">{{label}}</label>
+        <div class="input-group">
+            
+            <span class="input-group-text ">{{addons}}</span>
+            <input type="text" class="form-control" >
+          </div>
+          <div class="form-text" id="basic-addon4">{{textOutside}}</div>
+          </div>
+    </ng-container>
+     
+    
+    </ng-container>

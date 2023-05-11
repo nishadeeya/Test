@@ -1,0 +1,65 @@
+<div class="container-fluid mt-3 main">
+   
+    <div class="mb-3">
+        <div class="col-12">
+            <mat-card-header class="mt-3 d-flex ">
+                <div class="header-padding">
+                    <div class="mt-2 header-label"> Floating Lables</div>
+                </div>
+            </mat-card-header>
+        </div>
+    </div>
+    <form autocomplete="off">
+        <div class="row px-2 mb-4">
+            <div class="col-xl-2 col-md-10">
+                <label class="lable">Readonly plaintext</label>
+                <app-floating  [isReadOnly]="!viewOnly"  [isFormSubmitted]="isFormSubmitted" label="First Name" type="text"
+                placeholder="." class="form-floating " value="Nisha" [group]="floatingLabelForm" name="name" ></app-floating>
+            </div>
+            <div class="col-xl-2 col-md-10">
+                <label class="lable">Disabled </label>
+                <app-floating  [disabled]="!viewOnly"  [isFormSubmitted]="isFormSubmitted" label="Last Name" type="text"
+                placeholder="." class="form-floating " value="Nisha" [group]="floatingLabelForm" name="name" ></app-floating>
+            </div>
+            <div class="col-xl-2 col-md-10">
+                <label class="lable"> Validation Styles </label>
+                <app-floating  [isReadOnly]="!viewOnly"  [isFormSubmitted]="isFormSubmitted" label="Mobile Number" type="number"
+                placeholder="." class="form-floating is-invalid" value="9876543456" [group]="floatingLabelForm" name="name" ></app-floating>
+           
+            </div>
+            <div class="col-xl-2 col-md-10">
+                <label class="lable">Floating InputValue </label>
+         
+                <app-floating  [isReadOnly]="viewOnly" [isFormSubmitted]="isFormSubmitted" label="email" type="email"
+                placeholder="." class="form-floating " value="nisha@gmail.com" [group]="floatingLabelForm" name="password" ></app-floating>
+            </div>
+            <div class="col-xl-2 col-md-10">
+             
+                <label class="lable"> Floating labels </label>
+                <app-floating  [isReadOnly]="viewOnly" [isFormSubmitted]="isFormSubmitted" label="password" type="password"
+                placeholder="." class="form-floating"  [group]="floatingLabelForm" name="password" ></app-floating>
+               <!-- <span class='error-messages'
+                    *ngIf="formvalid['firstName'].errors && (formvalid['firstName'].touched || isFormSubmitted )">{{getFirstNameErrorMessage()}}</span>  -->
+            </div>
+            <div class="col-xl-2 col-md-10 mb-0">
+                
+                <label class="lable"> Textarea</label>
+                <app-floating  [isReadOnly]="viewOnly" [isFormSubmitted]="isFormSubmitted" label="Comments" type="textarea"
+                placeholder="." class="form-floating" [group]="floatingLabelForm" name="textarea" style="height: 100px;" ></app-floating>
+            </div>
+
+            <div class="col-xl-2 col-md-10 mb-6">
+                <label class="lable"> Selects  </label>
+                <app-floating label="Specialist Name" 
+    class="form-floating"     [things]="specialist" type="select"
+                
+                 ></app-floating>
+            </div>
+            <div class="col-xl-2 col-md-10">
+               
+            </div>
+        </div>
+       
+    </form>
+    
+</div>

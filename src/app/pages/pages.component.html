@@ -1,0 +1,12 @@
+<mat-grid-list cols="12" >
+    <mat-grid-tile class="sideNavContent" *ngFor="let tile of sidenav" [colspan]="tile.cols" [rowspan]="tile.rows"
+      [style.background]="tile.color">
+      <app-side-nav></app-side-nav>
+    </mat-grid-tile>
+    <mat-grid-tile   class="contentScroll" *ngFor="let tile of mainContent" [colspan]="tile.cols" [rowspan]="tile.rows"
+      [style.background]="tile.color">
+      <div class="container-fluid" >
+        <router-outlet></router-outlet>
+      </div>
+    </mat-grid-tile>
+  </mat-grid-list>

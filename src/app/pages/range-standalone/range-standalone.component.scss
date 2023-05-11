@@ -1,0 +1,297 @@
+// label {
+//     text-align: left;
+//     font: normal normal bold 0.7rem/17px Helvetica !important;
+//     letter-spacing: 0px;
+//     color: #102613;
+//     opacity: 1;
+//     margin-left: 0.2rem;
+// }
+
+// .btn_custom_cancel {
+//     height: 2.8rem;
+//     width: 15rem;
+//     border-radius: 0.6rem;
+//     background-color: #5F6269;
+//     color: white;
+//     font-family: "jost";
+
+//     &:hover {
+//         height: 2.8rem;
+//         width: 15rem;
+//         border-radius: 0.6rem;
+//         background-color: #5F6269;
+//         color: white;
+//         font-family: "jost";
+//     }
+// }
+
+// .userprofilestyle {
+//     text-align: left;
+//     font-size: 1.5rem;
+//     font-family: Helvetica-Regular;
+//     font-weight: bold;
+//     letter-spacing: 0.001rem;
+//     color: #29592D;
+//     opacity: 1;
+//     cursor: pointer;
+// }
+
+// .arrowstyle {
+//     font-size: bold
+// }
+
+// .required {
+//     font-size: 0.45rem;
+//     font-weight: bolder;
+//     fill: #102613 !important;
+//     margin-left: 2.5px !important;
+// }
+
+// .submitViewButton {
+//     color: #ffff;
+//     border: 1px solid #000000 !important;
+//     border-radius: 47px;
+//     height: 5.8vh;
+//     width: 15%;
+//     background-color: #000000;
+//     font: normal normal bold .7rem/1rem Helvetica;
+//     letter-spacing: 0.01rem;
+//     color: #FFFFFF;
+//     text-transform: uppercase;
+// }
+
+// .clearViewButton {
+//     color: #000000;
+//     border: 1px solid #000000 !important;
+//     border-radius: 47px;
+//     height: 5.8vh;
+//     width: 15%;
+//     background-color: #F0F0F0;
+//     text-transform: uppercase;
+//     font: normal normal normal .7rem/1rem Helvetica;
+// }
+
+// @media screen and (min-width: 1500px) {
+//     .submitViewButton {
+//         height: 5vh !important;
+//         width: 8 !important;
+//     }
+
+//     .clearViewButton {
+//         height: 5vh !important;
+//         width: 8 !important;
+//     }
+// }
+
+// @media screen and (min-width: 1800px) {
+//     .submitViewButton {
+//         height: 4vh !important;
+//         width: 6 !important;
+//     }
+
+//     .clearViewButton {
+//         height: 4vh !important;
+//         width: 6 !important;
+//     }
+// }
+
+// .saveicon {
+//     font-size: 18px;
+// }
+
+// ::placeholder {
+//     color: #7D7D7DB3;
+// }
+
+// .inputstyle {
+//     margin-left: 4.9%;
+// }
+
+// .own-textarea {
+//     background: #E2E2E2 0% 0% no-repeat padding-box;
+//     box-shadow: 0px 3px 6px #0000000F;
+//     border: 1px solid #77777777;
+//     opacity: 1;
+// }
+
+// .form-control:disabled,
+// .form-select:disabled {
+//     background: #E2E2E2 0% 0% no-repeat padding-box;
+//     box-shadow: 0px 3px 6px #0000000F;
+//     border: 1px solid #77777777;
+//     opacity: 1;
+// }
+
+// .historyStyle {
+//     text-align: left;
+//     font: normal normal bold 0.97rem/2rem Helvetica;
+//     letter-spacing: 0rem;
+//     color: #29592D !important;
+//     opacity: 1;
+// }
+
+// @media screen and (min-width: 1900px) {
+//     .submitButton {
+//         height: 5vh !important;
+//         width: 7% !important;
+//         font: normal normal bold .72rem/1rem Helvetica !important;
+//     }
+
+//     .clearButton {
+//         height: 5vh !important;
+//         width: 7% !important;
+//         font: normal normal bold .72rem/1rem Helvetica !important;
+//     }
+// }
+
+// @media screen and (min-width: 1580px) {
+//     .submitButton {
+//         height: 5vh !important;
+//         width: 7% !important;
+//         font: normal normal bold .72rem/1rem Helvetica !important;
+//     }
+
+//     .clearButton {
+//         height: 5vh !important;
+//         width: 7% !important;
+//         font: normal normal bold .72rem/1rem Helvetica !important;
+//     }
+// }
+
+// .submitButton {
+//     float: left !important;
+//     border-radius: 47px;
+//     height: 5.8vh;
+//     width: 11%;
+//     font: normal normal bold .7rem/1rem Helvetica;
+//     letter-spacing: 0px;
+//     text-transform: uppercase;
+// }
+
+// .clearButton {
+//     color: #45BF41;
+//     float: left !important;
+//     border: 1px solid #45BF41 !important;
+//     border-radius: 47px;
+//     height: 5.8vh;
+//     width: 11%;
+//     background-color: #F0F0F0;
+//     text-transform: uppercase;
+//     font: normal normal normal .7rem/1rem Helvetica;
+
+// }
+
+// .contentspace {
+//     margin-top: 4.5rem;
+// }
+
+// textarea {
+//     resize: none;
+// }
+
+// .mat-elevation-z8 {
+//     box-shadow: none;
+// }
+
+// .mat-cell {
+//     text-align: left;
+//     font: normal normal normal 0.9rem/1rem Helvetica;
+//     letter-spacing: 0rem;
+//     color: #646765;
+//     opacity: 1;
+// }
+
+// .mat-column-oldValue,
+// .mat-column-newValue {
+//     width: 20% !important;
+//     padding-right: 0.9rem !important;
+//     word-break: break-word;
+// }
+
+// .mat-column-fieldName {
+//     width: 15% !important;
+//     padding-right: 1rem !important;
+// }
+
+// .mat-column-updatedBy {
+//     width: 16% !important;
+//     word-break: break-word;
+// }
+
+// .mat-column-updatedAt {
+//     width: 9% !important;
+// }
+
+// tfoot,
+// th,
+// thead {
+//     border-color: inherit;
+//     border-style: solid;
+//     border-left: none;
+//     border-right: none;
+//     border-top: 1px solid #00000029;
+//     border-bottom: 1px solid #00000029 !important;
+//     background: #F2F2F2 0% 0% no-repeat padding-box;
+// }
+
+// tr {
+//     background: #ffff;
+// }
+
+// td.mat-cell {
+//     border-bottom: 1px solid #BDC6BE !important;
+// }
+
+// th.mat-header-cell {
+//     text-align: left;
+//     font: normal normal bold 0.9rem/1.7rem Helvetica;
+//     letter-spacing: 0px;
+//     color: #102613;
+//     opacity: 1;
+// }
+
+// .col-md-4 {
+//     width: 30% !important;
+// }
+
+// .card-border {
+//     border: 1px solid #E8E8E8 !important;
+//     color: #FFFFFF;
+// }
+
+// .imagestyle {
+//     width: 16px;
+//     height: 12px;
+// }
+.main {
+    color: #5F6269 !important;
+    padding-left: 0px !important;
+    padding-right: 1rem !important
+}
+mat-card-header {
+    background-color: #5F6269;
+    font-size: 0.9rem !important;
+    font-weight: medium;
+    font-family: "Jost";
+    color: #FFFFFF !important;
+    border: none !important;
+    border-radius: 9px !important;
+    padding: 5px;
+}
+.header-label {
+    font-size: 1rem;
+    padding: 0 4px;
+    font-family: "jost";
+}
+
+label {
+    font: normal normal 600 0.9rem Jost !important;
+    letter-spacing: 0px;
+    color: #8C8C8C;
+    opacity: 1;
+    padding-top: 2% !important;
+    padding-bottom: 2% !important;
+}
+.height{
+    height: 200vh !important;
+}

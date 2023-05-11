@@ -1,0 +1,68 @@
+<ng-container [formGroup]="group">
+  <ng-container *ngIf="type === 'text'">
+    <div class="{{class}}">
+      <input type="text"  [readonly]="isReadOnly" [disabled]="disabled" class="{{class}}" class="form-control" [id]="id" [placeholder]="placeholder" [value]="value"/>
+      <label [for]="for">{{label}}</label>
+    </div>
+  </ng-container>
+  <ng-container *ngIf="type === 'email'">
+    <div class="{{class}}">
+      <input type="email"  class="{{class}}" class="form-control" [id]="id" [placeholder]="placeholder" [value]="value"/>
+      <label [for]="for">{{label}}</label>
+    </div>
+  </ng-container>
+  <ng-container *ngIf="type === 'password'">
+    <div class="{{class}}">
+      <input type="password" class="{{class}}" class="form-control" [id]="id" [placeholder]="placeholder" />
+      <label [for]="for">{{label}}</label>
+    </div>
+  </ng-container>
+  <ng-container *ngIf="type === 'number'">
+    <div class="{{class}}">
+      <input type="number" class="{{class}}" class="form-control" [id]="id" [placeholder]="placeholder" [value]="value"  />
+      <label [for]="for">{{label}}</label>
+    </div>
+  </ng-container>
+  <ng-container *ngIf="type === 'textarea'">
+
+    <div class="{{class}}">
+      <input type="textarea" class="{{class}}" class="form-control" [id]="id" [placeholder]="placeholder" [style]="style"/>
+      <label [for]="for">{{label}}</label>
+    </div>
+  </ng-container>
+  <ng-container *ngIf="type === 'select'">
+
+    <div class="{{class}}">
+      <select class="form-select" 
+       
+        name="thing" 
+        >
+    <option *ngFor="let thing of things; let i = index;" [value]="i">
+         {{thing.name}}
+    </option>
+</select>
+<label [for]="for">{{label}}</label>
+      <!-- <select type="select" class="form-select" [items]="options" [bindLabel]="labelKey"  [id]="id"  [style]="style"></select>
+      <label [for]="for">{{label}}</label> -->
+    </div>
+
+   
+
+
+   
+
+
+  </ng-container>
+  <ng-container *ngIf="isEdit">
+    <ng-container *ngIf="type === 'checkbox'">
+      <input type="checkbox" class="{{class}}" [id]="name" [name]="name" [formControlName]="name"
+        [placeholder]="placeholder" [maxlength]="maxLength" [readonly]="isReadOnly " (blur)="onBlur($event)"
+        (focus)="onFocus($event)" (input)="onValueChange($event)" [ngClass]="{
+    'is-invalid':
+      formField &&
+      formField.errors &&
+      (isFormSubmitted || (!formField.pristine && isErrorOnChange))
+  }" />
+    </ng-container>
+  </ng-container>
+  </ng-container>

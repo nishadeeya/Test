@@ -1,0 +1,29 @@
+.main {
+    color: #5F6269 !important;
+    padding-left: 0px !important;
+    padding-right: 1rem !important;
+}
+mat-card-header {
+    background-color: #5F6269;
+    font-size: 0.9rem !important;
+    font-weight: medium;
+    font-family: "Jost";
+    color: #FFFFFF !important;
+    border: none !important;
+    border-radius: 9px !important;
+    padding: 5px;
+}
+.header-label {
+    font-size: 1rem;
+    padding: 0 4px;
+    font-family: "jost";
+}
+
+label {
+    font: normal normal 600 0.9rem Jost !important;
+    letter-spacing: 0px;
+    color: #444242;
+    opacity: 1;
+    padding-top: 2% !important;
+    padding-bottom: 2% !important;
+}

@@ -1,0 +1,99 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@ng-select/ng-select/themes/default.theme.css";
+html, body { height: 100%; }
+body { margin: 0;  font-family: "Jost";}
+
+label {
+  display: inline-block;
+  color: #8C8C8C;
+  font: normal normal 600 0.9rem Jost;
+} 
+
+.mat-form-field-appearance-fill .mat-form-field-flex {
+    padding: 2px 0.1rem !important;
+    border: none;
+    background-color: #ffff !important;
+    border: 1px solid #ced4da;
+    border-radius: 6px !important;
+    box-shadow: 0px 3px 6px #0000000F;
+    color: #7D7D7DB3;
+    align-items: center !important;
+  }
+  
+  .mat-form-field.mat-accent .mat-input-element {
+    caret-color: #7D7D7DB3;
+  }
+  
+  .green-snackbar {
+    background: #29592D;
+  }
+  
+  .mat-form-field {
+    width: 100%;
+    text-align: left;
+    font: normal normal bold 12px/19px Helvetica;
+    letter-spacing: 0px;
+    color: rgba(125, 125, 125, 0.7019607843);
+    opacity: 1;
+    border-color: 1px solid #ced4da;
+    background: #ffff !important;
+    border-radius: 6px;
+  }
+  
+  .mat-form-field-appearance-fill .mat-form-field-underline {
+    height: 0px !important;
+    width: 0px !important;
+  }
+  
+  .mat-select-placeholder
+  // .ng-select
+   {
+    font: normal normal normal 0.8rem Gilroy !important;
+    color: #878786 !important;
+    opacity: 1 !important;
+  
+  
+  }
+  .ng-placeholder,input::placeholder
+  {
+    color: #878786 !important;
+    padding-top:0.05rem !important;
+    font: normal normal normal 0.7rem Helvetica !important;
+  }
+  span.mat-option-text {
+    text-align: left;
+    font: normal normal normal 15px/19px Helvetica;
+    letter-spacing: 0px;
+    color: #646765;
+    opacity: 1;
+  }
+  
+  .mat-form-field-appearance-fill .mat-form-field-infix {
+    padding: 0rem;
+    padding-left: 11px;
+    border-top-width: 0px !important;
+    margin-top: 0px !important;
+  }
+  
+  .mat-input-element {
+    color: #7D7D7DB3 !important;
+  }
+  
+  .mat-datepicker-content.mat-accent .mat-calendar-body-selected {
+    background-color: green !important;
+    
+  }
+  
+  ::ng-deep.mat-snackbar-container {
+    margin-top: 30% !important;
+    z-index: 9999;
+  }
+  
+  .mat-drawer-inner-container {
+    overflow: hidden !important;
+  }
+
+  .form-control {
+    color: rgba(87, 87, 87, 0.9)!important;
+    font: normal normal 600 0.9rem Jost !important;
+  }

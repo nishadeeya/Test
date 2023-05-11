@@ -1,0 +1,49 @@
+<table mat-table class="tableDesign" class="{{class}}" [dataSource]="_dataSource" matSort>
+  <ng-container *ngFor="let c of columns;" [matColumnDef]="c.caption">
+    <ng-container>
+      <th mat-header-cell *matHeaderCellDef>
+        <div *ngIf="c.field != 'Status' || 'Action'">
+          {{c.caption}}
+        </div>
+        <div class="actionHeader" *ngIf="c.field == 'Status'">
+          {{c.caption}}
+        </div>
+        <div *ngIf="c.field == 'Action'">
+          {{c.caption}}
+        </div>
+      </th>
+    </ng-container>
+
+    <td mat-cell *matCellDef="let element; let i=index">
+      <div *ngIf="c.field == 'sno'">
+        {{pageNo == 1 ? i+1 : ((pageNo-1)*10)+i+1}}
+      </div>
+      <!-- <div *ngIf="c.field == 'statusToggle'">
+      <app-toggle [group]="toggleForm" [checked]='element.activeFlag' (change)="toggleClickHandler($event,element)"></app-toggle>
+      </div> -->
+      <div *ngIf="c.field != 'status' && 'action' && 'sno'">
+        {{element[c.field]}}
+      </div>
+    
+
+     
+      <div class="d-flex " *ngIf="c.field == 'action'">
+        <mat-icon *ngIf="showEditIcon" class="cursor" (click)="editClickHandler(element)">edit</mat-icon>
+        <mat-icon *ngIf="showViewIcon" class="cursor" (click)="viewClickHandler(element)">visibility</mat-icon>
+
+      </div>
+
+    </td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>
+
+<h1 class="notFound mb-1 p-0" *ngIf="lengthCount==0">No records found</h1>
+<div>
+
+  <mat-paginator #paginator *ngIf="lengthCount>0" [length]="length" [pageSizeOptions]="[10]" (page)="getPageNo($event)"
+    showFirstLastButtons aria-label="Select page of periodic elements">
+  </mat-paginator>
+</div>

@@ -1,0 +1,4 @@
+<!-- <app-card [items]="ProjectDetails"></app-card> -->
+<app-table class="table-striped-columns" [dataSource]="projectTableData" [columns]="projectColumns" [showEditIcon]="true" [showViewIcon]="true" (editClick)="edit($event)" (viewClick)="view($event)"></app-table>
+<!-- <app-date-picker [group]="employeeForm" name="date"></app-date-picker>
+<app-toggle></app-toggle> -->
